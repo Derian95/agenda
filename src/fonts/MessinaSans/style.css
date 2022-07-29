@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Messina Sans';
+    src: local('Messina Sans Italic'), local('Messina-Sans-Italic'),
+        url('MessinaSans-RegularItalic.woff2') format('woff2'),
+        url('MessinaSans-RegularItalic.woff') format('woff'),
+        url('MessinaSans-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }

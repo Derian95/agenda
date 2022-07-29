@@ -1,0 +1,76 @@
+.card {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 20px;
+   
+}
+.fecha{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: #1a2a3a;
+}
+.fecha p{
+    margin: 0;
+    font-size: 50px;
+    font-weight:900;
+    transition: all .6s;
+    opacity: 0;
+
+}
+.card_image {
+    width: 100%;
+    transition: all 0.7s;
+    height: 100%;
+}
+
+.informacion {
+    height: 40px;
+    background-color: #163B5E;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+    transition: all 0.7s;
+}
+.informacion p{
+    font-size: 18px;
+    margin: 0;
+
+}
+h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.datos {
+    visibility: hidden;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.card:hover .datos {
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover .fecha {
+    visibility: visible;
+}
+.card:hover .fecha p
+{
+    margin-top: 100px;
+    opacity: 1;
+}
+.card:hover .informacion {
+    height: 120px;
+}
+.card:hover .card_image{
+    transform: scale(1.1) rotate(-3deg);
+    opacity: 0.25;
+}

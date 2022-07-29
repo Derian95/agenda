@@ -1,0 +1,47 @@
+.container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gradiente {
+    width: 100%;
+    background-image: linear-gradient(
+        to right,
+        #163b5e,
+        #163b5efd,
+        #163b5ebd,
+        #163b5e83,
+        #163b5e6c
+    );
+    height: 100vh;
+    position: absolute;
+}
+.imagen {
+    width: 1fr;
+    height: 100vh;
+    position: absolute;
+}
+.mensaje {
+    color: white;
+    min-width: 70vw;
+    height: 60vh;
+    position: absolute;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+.mensaje h1 {
+    color: white;
+    font-size: 5rem;
+}
+.mensaje p {
+    font-size: 15px;
+}

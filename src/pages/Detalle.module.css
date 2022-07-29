@@ -1,0 +1,125 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #163b5e;
+    position: relative;
+
+
+}
+.tipo{
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    flex-shrink: 0;
+    
+}
+.tipo p
+{
+    color: white;
+    font-size: 25px;
+}
+.tipo::before{
+    content: ' ';
+    width: 30vw;
+    height: 2px;
+    background-color: white;
+    margin-right: 20px;
+}
+.tipo::after{
+    content: ' ';
+    width: 30vw;
+    height: 2px;
+    background-color: white;
+    margin-left: 20px;
+}
+.gradiente {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: red;
+}
+.imagen{
+    width: 60vh;
+    
+}
+.gradiente::after{
+    content: ' ';
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    border-bottom: 3px solid white;    
+    border-right: 3px solid white;    
+   
+}
+.gradiente::before{
+    content: ' ';
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-top: 3px solid white;    
+    border-left: 3px solid white;  
+}
+.mensaje {
+    color: white;
+    height: 60vh;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+}
+.mensaje h1 {
+    color: white;
+    font-size: 5rem;
+}
+.mensaje p {
+    font-size: 15px;
+}
+.detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.detalle h3{
+    font-size: 30px;
+}
+@media (max-width:700px) {
+    .container{
+        flex-direction: column;
+    }
+      .gradiente{
+        margin-bottom: 130px;
+        height: 250px;
+        width: 250px;
+    }
+    .mensaje{
+        padding-top: 50px;
+        margin: 0;
+    }
+    .imagen{
+        height: 250px;
+        width: 250px;
+    }
+    .tipo::after {
+        margin: 0;
+    }
+    .tipo::before {
+        margin: 0;
+    }
+}

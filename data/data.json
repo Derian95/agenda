@@ -1,0 +1,155 @@
+{
+    "eventos":[
+        { 
+            "id":1,
+            "titulo":"titulo de prueba",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        },
+        { 
+            "id":2,
+            "titulo":"qwe",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        },
+        { 
+            "id":3,
+            "titulo":"Numero 3",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        },
+        { 
+            "id":4,
+            "titulo":"Cuatro numero",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        },
+        { 
+            "id":5,
+            "titulo":"Zinco number",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        },
+        { 
+            "id":6,
+            "titulo":"Six",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        },
+        { 
+            "id":7,
+            "titulo":"Seventin raaa",
+            "descripcion":"Esto es una descripcion de prueba raaa",
+            "imagen":"https://play-lh.googleusercontent.com/ahJtMe0vfOlAu1XJVQ6rcaGrQBgtrEZQefHy7SXB7jpijKhu1Kkox90XDuH8RmcBOXNn",
+            "fecha_inicio":"22/02/2022",
+            "fecha_fin":"27/02/2022",
+            "hora_inicio":"7:13pm",
+            "hora_fin":"7:20pm",
+            "lugar":"Tu casa",
+            "Dirigido_a":"Alumnos, Doncentes e Investigadores",
+            "tipo":"Conferencia",
+            "organizador":[
+                {
+                    "nombre":"Tein"
+                },
+                {
+                    "nombre":"Gpad"
+                }
+            ]
+        }
+
+
+    ]
+       
+    
+}

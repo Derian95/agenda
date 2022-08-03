@@ -22,7 +22,7 @@ export default function Inicio() {
         llenarEventos()
     }, [nombre])
 
-    if(loading) return <p>raa</p>
+    //if(loading) return <p>raa</p>
 
     return (
         <div className={styles.container}>

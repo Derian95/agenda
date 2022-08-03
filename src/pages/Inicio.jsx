@@ -33,10 +33,12 @@ export default function Inicio() {
 
             <div className={styles.contain}>
             {
-                evento.filter(dato=>dato.titulo.toLowerCase().includes(nombre)).map((evento) => {
+                loading?<p>Sin datos</p>:
+                (evento.filter(dato=>dato.titulo.toLowerCase().includes(nombre)).map((evento) => {
                     return <Card key={evento.id} data={evento} />
-                })
+                }))
             }
+            
             </div>
          
             <Footer/>            

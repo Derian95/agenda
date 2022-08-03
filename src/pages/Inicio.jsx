@@ -21,7 +21,7 @@ export default function Inicio() {
     useEffect(() => {
         llenarEventos()
     }, [nombre])
-
+ 
     //if(loading) return <p>raa</p>
 
     return (

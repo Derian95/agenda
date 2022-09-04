@@ -1,4 +1,4 @@
-import { useContext, useEffect,useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Card from '../components/card/Card'
 import { Eventos } from '../context/Contex'
 import { traerEventos } from '../api/api'
@@ -10,36 +10,39 @@ import Buscador from '../components/buscar/Buscador'
 import Footer from '../components/footer/Footer'
 
 export default function Inicio() {
-    const { evento, setEvento,nombre, setNombre } = useContext(Eventos)
-    const [ loading, setLoading ] = useState(true)
+    const { evento, setEvento, nombre, setNombre } = useContext(Eventos)
+    const [loading, setLoading] = useState(true)
 
     const llenarEventos = async () => {
         const resultados = await traerEventos()
-        setEvento(resultados) 
+        setEvento(resultados)
         setLoading(false)
     }
     useEffect(() => {
         llenarEventos()
     }, [nombre])
 
-    if(loading) return <p>raa</p>
+
+    if (loading) return <p>raa</p>
 
     return (
         <div className={styles.container}>
-            <Header/>
+            <Header />
             <h1>PROXIMOS EVENTOS</h1>
 
             <Buscador nombre={nombre} setNombre={setNombre} />
-
+           
             <div className={styles.contain}>
-            {
-                evento.filter(dato=>dato.titulo.toLowerCase().includes(nombre)).map((evento) => {
-                    return <Card key={evento.id} data={evento} />
-                })
-            }
+                {evento
+                    .filter((dato) =>
+                        dato.titulo.toLowerCase().includes(nombre)
+                    )
+                    .map((evento) => {
+                        return <Card key={evento._id} data={evento} />
+                    })}
             </div>
-         
-            <Footer/>            
+
+            <Footer />
         </div>
     )
 }

@@ -11,7 +11,7 @@ export default function Detalle() {
     const [loading, setLoading] = useState(true)
 
     const fetchEvento = async (id) => {
-        const response = await axios.get(`http://localhost:3000/eventos/${id}`)
+        const response = await axios.get(`https://agenda-upt.herokuapp.com/api/event/public/${id}`)
         setEvento(response.data)
         setLoading(false)
     }
@@ -23,7 +23,7 @@ export default function Detalle() {
         <div>
             <div className={styles.container}>
                 <div className={styles.tipo}>
-                    <p>{evento.tipo}</p>
+                    <p>como</p>
                 </div>
                 <div className={styles.mensaje}>
                     <h3>{evento.titulo}</h3>
@@ -40,11 +40,11 @@ export default function Detalle() {
                         {' ' + evento.hora_fin}
                     </p>
                     <p>LUGAR: {evento.lugar}</p>
-                    <p>DIRIGIDO A : {evento.Dirigido_a}</p>
+                    <p>DIRIGIDO A : {evento.dirigido_a}</p>
                 </div>
 
                 <div className={styles.gradiente}>
-                    <img src={evento.imagen} alt='' className={styles.imagen} />
+                    <img src={evento.imagen.secure_url} alt='' className={styles.imagen} />
                 </div>
             </div>
             <div className={styles.detalle}>
@@ -52,7 +52,7 @@ export default function Detalle() {
                 <p>{evento.descripcion}</p>
                 <h3>Organizadores:</h3>
 
-                {evento.organizador.map((orga) => {
+                {evento.organizadores.map((orga) => {
                     return (
                         <div key={orga.nombre}>
                             <p> * {orga.nombre}</p>

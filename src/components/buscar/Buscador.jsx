@@ -20,7 +20,7 @@ export default function Buscador({ setNombre, nombre }) {
                     className={styles.input}
                     type='text'
                     value={nombre}
-                    placeHolder='Buscar'
+                    placeholder='Buscar'
                     onChange={buscar}
                 />
             </div>

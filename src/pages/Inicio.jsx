@@ -24,6 +24,8 @@ export default function Inicio() {
 
 
     if (loading) return <p>raa</p>
+ 
+    //if(loading) return <p>raa</p>
 
     return (
         <div className={styles.container}>
@@ -40,6 +42,13 @@ export default function Inicio() {
                     .map((evento) => {
                         return <Card key={evento._id} data={evento} />
                     })}
+            {
+                loading?<p>Sin datos</p>:
+                (evento.filter(dato=>dato.titulo.toLowerCase().includes(nombre)).map((evento) => {
+                    return <Card key={evento.id} data={evento} />
+                }))
+            }
+            
             </div>
 
             <Footer />

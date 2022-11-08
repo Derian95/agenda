@@ -8,6 +8,7 @@ import Carrusel from '../components/Carrusel'
 import Header from '../components/header/Header'
 import Buscador from '../components/buscar/Buscador'
 import Footer from '../components/footer/Footer'
+import { Loader } from '../components/loader/Loader'
 
 export default function Inicio() {
     const { evento, setEvento, nombre, setNombre } = useContext(Eventos)
@@ -17,13 +18,13 @@ export default function Inicio() {
         const resultados = await traerEventos()
         setEvento(resultados)
         setLoading(false)
+        console.log('raa')
     }
     useEffect(() => {
         llenarEventos()
     }, [nombre])
 
-
-    if (loading) return <p>raa</p>
+    if (loading) return <Loader/>
  
     //if(loading) return <p>raa</p>
 
@@ -42,12 +43,12 @@ export default function Inicio() {
                     .map((evento) => {
                         return <Card key={evento._id} data={evento} />
                     })}
-            {
+            {/* {
                 loading?<p>Sin datos</p>:
                 (evento.filter(dato=>dato.titulo.toLowerCase().includes(nombre)).map((evento) => {
                     return <Card key={evento.id} data={evento} />
                 }))
-            }
+            } */}
             
             </div>
 

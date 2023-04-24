@@ -11,7 +11,7 @@ export default function Detalle() {
     const [loading, setLoading] = useState(true)
 
     const fetchEvento = async (id) => {
-        const response = await axios.get(`https://agenda-upt.herokuapp.com/api/event/public/${id}`)
+        const response = await axios.get(`https://agend-aupt.onrender.com/api/event/public/${id}`)
         setEvento(response.data)
         setLoading(false)
     }
